@@ -1,0 +1,22 @@
+version: '3'
+services:
+  bookapi:
+    build:
+      context: ./store
+      dockerfile: Dockerfile
+    cache_from:
+      - '${API_IMAGE}'
+    image: '${API_IMAGE}'
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
+    expose:
+      - 80
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    cache_from:
+      - '${NGINX_IMAGE}'
+    image: '${NGINX_IMAGE}'
+    ports:
+      - 80:80

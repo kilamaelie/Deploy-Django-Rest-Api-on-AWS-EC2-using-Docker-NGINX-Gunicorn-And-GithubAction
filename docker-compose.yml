@@ -1,0 +1,26 @@
+version: '3'
+services:
+  bookapi:
+    build:
+      context: ./store
+      dockerfile: Dockerfile
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - static_volume:/store/staticfiles/
+      - media_volume:/store/mediafiles/
+    expose:
+      - 80
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - static_volume:/store/staticfiles/
+      - media_volume:/store/mediafiles/
+
+volumes:
+  static_volume:
+  media_volume:
