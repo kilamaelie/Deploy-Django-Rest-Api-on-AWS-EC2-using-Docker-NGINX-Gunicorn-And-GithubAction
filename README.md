@@ -24,8 +24,19 @@ Run locally:
 $ docker-compose up  --build
 ```
 
-Verify it on [http//localhost:3000/](http//localhost:3000/)
+Verify it on
+
+- [http//localhost:8000/](http//localhost:8000/)
+- with nginx [http//localhost:80/](http//localhost:80/)
 
 ### CI and Production
 
 See the blog post on [Deploy a Django Rest Api on AWS EC2 using Docker, NGINX, Gunicorn and GitHub Action.](https://medium.com/@kilama/build-and-deploy-a-reactjs-app-to-aws-ec2-with-docker-nginx-and-automate-with-github-actions-d8c57fb47967)
+
+### Contributors
+
+Please feel free to contribute by making a Pull Request!
+
+###### If you find the content interesting and useful, feel free to use the "Buy me a coffee" link below to support me and buy me a coffee.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/kilamaelie)
