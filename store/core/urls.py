@@ -22,7 +22,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 router = DefaultRouter()
-router.register(r'books', BookViewSet)
+router.register(r'book', BookViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
