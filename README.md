@@ -1,3 +1,7 @@
+
+![BreadcrumbsDeploy-Django-Rest-Api-on-AWS-EC2-using-Docker-NGINX-Gunicorn-And-GithubAction
+](https://res.cloudinary.com/dwz5lx2k7/image/upload/v1707667942/tutorials/article_django_mhodc7.webp)
+
 # Deploy a Django Rest Api on AWS EC2 using Docker, NGINX, Gunicorn and GitHub Action.
 
 Django, a high-level Python web framework, is a popular choice for building RESTful APIs. Once your Django Rest API has been developed and tested, deploying it becomes a crucial step in making it accessible to users. In this blog post, we'll guide you through the process of deploying a Django Rest API on AWS EC2 using Docker for containerization, NGINX as a reverse proxy and GitHub Actions for automated deployment.
