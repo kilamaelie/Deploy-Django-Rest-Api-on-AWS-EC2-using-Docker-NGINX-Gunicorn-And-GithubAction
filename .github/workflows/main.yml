@@ -35,7 +35,7 @@ jobs:
       - name: Build images
         id: build-images
         run: |
-          docker-compose -f docker-compose.ci.yml build 2>error >&1
+          docker-compose -f docker-compose.ci.yml build
 
       - name: Push images
         run: |
@@ -95,6 +95,6 @@ jobs:
               docker login ghcr.io -u ${{secrets.NAMESPACE}} -p ${{secrets.PERSONAL_ACCESS_TOKEN}}
               docker pull $DJANGO_TUTORIAL_API_IMAGE
               docker pull $DJANGO_TUTORIAL_NGINX_IMAGE
-              docker-compose --env-file=.env -f docker-compose.prod.yml up -d
+              docker-compose --env-file=.env -f docker-compose.prod.yml up -d --build
               docker logout
           EOF
