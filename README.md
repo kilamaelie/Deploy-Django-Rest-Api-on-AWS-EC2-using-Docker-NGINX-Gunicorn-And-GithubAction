@@ -35,7 +35,7 @@ Verify it on
 
 ### CI and Production
 
-See the blog post on [Deploy a Django Rest Api on AWS EC2 using Docker, NGINX, Gunicorn and GitHub Action.](https://medium.com/@kilama/build-and-deploy-a-reactjs-app-to-aws-ec2-with-docker-nginx-and-automate-with-github-actions-d8c57fb47967)
+See the blog post on [Deploy a Django Rest Api on AWS EC2 using Docker, NGINX, Gunicorn and GitHub Action.](https://medium.com/@kilamaelie/deploy-a-django-rest-api-on-aws-ec2-using-docker-nginx-gunicorn-and-github-action-1d3b41f3bfdc)
 
 ### Contributors
 
